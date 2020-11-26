@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A36041ED-923E-4D4F-98DC-6DB703D7FDF6}</ProjectGuid>
+    <ProjectGuid>{E027240D-4EDF-47B0-B4A6-F8F6E58773A1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CC01.BLL</RootNamespace>
-    <AssemblyName>CC01.BLL</AssemblyName>
+    <RootNamespace>CC01.BO</RootNamespace>
+    <AssemblyName>CC01.BO</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,21 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CarteBLO.cs" />
-    <Compile Include="common.cs" />
-    <Compile Include="ctor.cs" />
-    <Compile Include="MesException.cs" />
+    <Compile Include="Carte.cs" />
+    <Compile Include="Ecole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CC01.BO\CC01.BO.csproj">
-      <Project>{e027240d-4edf-47b0-b4a6-f8f6e58773a1}</Project>
-      <Name>CC01.BO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CC01.DAL\CC01.DAL.csproj">
-      <Project>{e30205e3-9db7-4431-8f28-1c5d7aa530b5}</Project>
-      <Name>CC01.DAL</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

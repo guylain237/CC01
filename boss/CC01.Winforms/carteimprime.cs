@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CC01.BO
-{[Serializable]
-    public class Carte
-
+namespace CC01.Winforms
+{
+   public class carteimprime
     {
         public string Nom { get; set; }
         public string Prenom { get; set; }
@@ -17,11 +16,7 @@ namespace CC01.BO
         public string Contact { get; set; }
         public string Email { get; set; }
 
-        public Carte()
-        {
-        }
-
-        public Carte(string nom, string prenom, string date_naissance, string lieu, string matricule, string contact, string email)
+        public carteimprime(string nom, string prenom, string date_naissance, string lieu, string matricule, string contact, string email)
         {
             Nom = nom;
             Prenom = prenom;
@@ -31,18 +26,5 @@ namespace CC01.BO
             Contact = contact;
             Email = email;
         }
-
-        public override bool Equals(object obj)
-        {
-            return obj is Carte carte &&
-                   Matricule.Equals(carte.Matricule, StringComparison.OrdinalIgnoreCase);
-        }
-
-        public override int GetHashCode()
-        {
-            return -1304721846 + EqualityComparer<string>.Default.GetHashCode(Matricule);
-        }
-
-
     }
 }
