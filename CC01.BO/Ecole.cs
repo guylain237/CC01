@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CC01.BO
-{
-    class Ecole
+{[Serializable]
+   public class Ecole
     {
         public string Nom_ecole { get; set; }
         public string Ville { get; set; }
