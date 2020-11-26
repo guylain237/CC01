@@ -36,12 +36,12 @@ namespace CC01.Winforms
         private void loadata()
         {
             
-            string val = textsearch.Text.ToLower();
+            string value = textsearch.Text.ToLower();
             var cartes = carteBLO.getby(
                  
                
                X =>
-                  X.Matricule.ToLower().Contains(val)
+                  X.Matricule.ToLower().Contains(value)
 
                   ).OrderBy(X => X.Contact).ToArray();
             {
