@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="CarteBLO.cs" />
     <Compile Include="common.cs" />
-    <Compile Include="ctor.cs" />
     <Compile Include="MesException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
